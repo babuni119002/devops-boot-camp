@@ -20,5 +20,5 @@
       state: present
 
   - name: Running Artifact
-    shell: nohup java -jar ./target/springboot-bootcamp-0.0.1-SNAPSHOT.jar &
+    shell: nohup java -jar /home/ubuntu/springboot-bootcamp-0.0.1-SNAPSHOT.jar &
 
