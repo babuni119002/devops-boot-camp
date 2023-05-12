@@ -28,7 +28,7 @@ pipeline {
                 sh 'sudo mv --force sonar-scanner-cli-4.6.2.2472-linux /opt/sonar-scanner'
                 sh 'sudo sh -c \'echo "#/bin/bash \nexport PATH=\\\"$PATH:/opt/sonar-scanner/bin\\\"" > /etc/profile.d/sonar-scanner.sh\''
                 sh 'chmod +x /opt/sonar-scanner/bin/sonar-scanner'
-                sh '. /etc/profile.d/sonar-scanner'
+                sh './etc/profile.d/sonar-scanner'
             }
         }
         stage ('Analyzing Code Quality') {
